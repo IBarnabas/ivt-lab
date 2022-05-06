@@ -15,6 +15,9 @@ public class GT4500 implements SpaceShip {
   public GT4500(TorpedoStore primaryTorpedoStore, TorpedoStore secondaryTorpedoStore) {
     //this.primaryTorpedoStore = new TorpedoStore(10);
     //this.secondaryTorpedoStore = new TorpedoStore(10);
+    this.primaryTorpedoStore = primaryTorpedoStore;
+    this.secondaryTorpedoStore = secondaryTorpedoStore;
+
     if(primaryTorpedoStore == null &&  secondaryTorpedoStore == null ){
       throw new InvalidParameterException("torpedoStores not be null");
     } 
